@@ -151,6 +151,9 @@ venv.bak/
 .dmypy.json
 dmypy.json
 
+change_dates.py
+commit_date_config.yaml
+
 # Pyre type checker
 .pyre/
 
