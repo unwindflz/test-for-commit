@@ -153,6 +153,8 @@ dmypy.json
 
 change_dates.py
 commit_date_config.yaml
+README_commit_date_modifier.md
+commit_date_config_examples.yaml
 
 # Pyre type checker
 .pyre/
