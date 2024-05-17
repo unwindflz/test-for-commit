@@ -2,6 +2,7 @@ def main():
     print("Hello from test-for-commit!")
     print("this is a test for commit")
     print("this is a test for commit2")
+    print("this is a test for commit3")
 
 
 if __name__ == "__main__":
