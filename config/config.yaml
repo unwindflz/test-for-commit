@@ -1,0 +1,40 @@
+# Configuration file for the Python application
+
+# General application settings
+app:
+  name: "Test for Commit"
+  version: "1.0"
+
+# Logging configuration
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Database configuration
+database:
+  type: "sqlite"  # Options: sqlite, postgres, mysql
+  host: "localhost"  # Database host
+  port: 5432  # Default port for PostgreSQL
+  user: "user"  # Database user
+  password: "password"  # Database password
+  name: "example_db"  # Database name
+
+# Environment-specific settings
+environments:
+  development:
+    debug: true
+    logging:
+      level: "DEBUG"
+  testing:
+    debug: false
+    logging:
+      level: "INFO"
+  production:
+    debug: false
+    logging:
+      level: "ERROR"
+
+# Validation settings
+validation:
+  enabled: true  # Set to false to disable validation
+  strict: true  # Set to true for strict validation rules
