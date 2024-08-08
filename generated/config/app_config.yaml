@@ -1,0 +1,38 @@
+# Application Configuration
+# 
+# This file contains the configuration settings for the application.
+
+version: "1.0"
+
+# Environment settings
+environments:
+  development:
+    debug: true
+    database_url: "sqlite:///dev.db"
+    logging_level: "DEBUG"
+  testing:
+    debug: false
+    database_url: "sqlite:///test.db"
+    logging_level: "INFO"
+  production:
+    debug: false
+    database_url: "postgresql://user:password@localhost/prod"
+    logging_level: "ERROR"
+
+# General application settings
+app:
+  name: "MyApplication"
+  version: "1.0"
+  allowed_hosts:
+    - "localhost"
+    - "127.0.0.1"
+
+# Timeout settings
+timeout:
+  request: 30  # seconds
+  connection: 10  # seconds
+
+# Feature flags
+features:
+  enable_feature_x: true
+  enable_feature_y: false
