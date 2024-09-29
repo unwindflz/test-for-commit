@@ -1,0 +1,23 @@
+# Application Configuration
+
+# General settings
+app_name: My Application
+version: 1.0.0
+
+# Database settings
+database:
+  host: localhost
+  port: 5432
+  user: app_user
+  password: app_password
+  name: app_db
+
+# Logging settings
+logging:
+  level: INFO
+  file: app.log
+
+# Feature toggles
+features:
+  enable_feature_x: true
+  enable_feature_y: false
