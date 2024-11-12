@@ -1,38 +1,38 @@
-{  
-  "version": "1.0",  
-  "project_type": "python_application",  
-  "recommended_structure": {  
-    "src/": {  
-      "description": "Main source code directory",  
-      "file_types": ["*.py"],  
-      "subdirectories": {  
-        "utils/": "Utility functions and helpers",  
-        "models/": "Data models and schemas"  
-      }  
-    },  
-    "docs/": {  
-      "description": "Documentation files",  
-      "file_types": ["*.md"],  
-      "subdirectories": {}  
-    },  
-    "tests/": {  
-      "description": "Test files",  
-      "file_types": ["test_*.py", "*_test.py"],  
-      "subdirectories": {  
-        "unit/": "Unit tests",  
-        "integration/": "Integration tests"  
-      }  
-    },  
-    "config/": {  
-      "description": "Configuration files",  
-      "file_types": ["*.toml", "*.yaml"],  
-      "subdirectories": {}  
-    }  
-  },  
-  "guidelines": [  
-    "Place main application code in src/",  
-    "Keep tests separate in tests/ directory",  
-    "Document everything in docs/",  
-    "Use clear, descriptive directory names"  
-  ]  
+{
+  "version": "1.0",
+  "project_type": "python_application",
+  "recommended_structure": {
+    "src/": {
+      "description": "Main source code directory",
+      "file_types": ["*.py"],
+      "subdirectories": {
+        "models/": "Data models and architecture",
+        "utils/": "Tool functions and helper programs"
+      }
+    },
+    "docs/": {
+      "description": "Documentation files",
+      "file_types": ["*.md", "*.rst"],
+      "subdirectories": {}
+    },
+    "tests/": {
+      "description": "Test files",
+      "file_types": ["test_*.py", "*_test.py"],
+      "subdirectories": {
+        "unit/": "Unit tests"
+      }
+    },
+    "config/": {
+      "description": "Configuration files",
+      "file_types": ["*.yaml", "*.json"],
+      "subdirectories": {}
+    }
+  },
+  "guidelines": [
+    "Put main application code in src/",
+    "Put tests in tests/ directories",
+    "Record all content in docs/",
+    "Store configuration files in config/",
+    "Use clear, descriptive directory names"
+  ]
 }
