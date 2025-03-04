@@ -1,78 +1,72 @@
-# Test for Commit
+# Project Title
 
-## Project Overview
-This project is designed to facilitate commit date manipulation for version control systems, particularly Git. It provides utilities for modifying commit dates and offers a set of tools to handle various date operations and formatting.
+## Description
+This project is a Python-based application designed to manage and modify commit dates in version control systems. It provides a set of utilities for date processing, formatting, and manipulation, making it easier for developers to handle date-related functionalities.
 
 ## Purpose
-The primary goal of this project is to allow developers to modify the commit date of their changes, which can be useful in scenarios such as reordering commits or correcting commit timestamps in Git repositories.
+The purpose of this project is to facilitate commit date modifications for various use cases, enhancing the workflow of developers who require flexibility in managing their commit histories.
 
-## Installation
-To set up this project, ensure that you have Python 3 installed. You can clone this repository and install the necessary dependencies with the following commands:
+## Installation Instructions
+To install this project, ensure you have Python 3 installed, then clone the repository and set up a virtual environment:
 
 ```bash
-git clone https://github.com/yourusername/test-for-commit.git
-cd test-for-commit
-pip install -r requirements.txt
+# Clone the repository
+git clone <repository-url>
+cd <repository-directory>
+
+# Create a virtual environment
+python3 -m venv .venv
+source .venv/bin/activate
+
+# Install required packages
+pip install -r requirements.txt  # if a requirements.txt file is provided
 ```
 
-> **Note:** Ensure that you have a virtual environment activated to avoid conflicts with other projects.
-
-## Usage
-To run the main script, use the following command:
+## Usage Examples
+You can run the main application using the following command:
 
 ```bash
 python main.py
 ```
-This will display a simple greeting message. 
 
-For more complex usage, you can utilize the functions defined in the `src/utils` module to perform various date operations. Refer to the documentation for detailed examples.
+To utilize the `DataProcessor` class:
 
-## Project Structure
+```python
+from src.utils.data_processor import DataProcessor
+
+data_processor = DataProcessor()
+# Use data_processor methods as needed
+```
+
+## Project Structure Overview
+The project directory is organized as follows:
+
 ```
 .
-├── .git
-├── .gitignore
-├── .python-version
-├── .venv
-├── README.md
-├── change_dates.py
-├── commit_date_config_examples.yaml
-├── config
-│   └── config.yaml
-├── docs
-│   ├── PROJECT_DOCUMENTATION.md
-│   ├── PROJECT_GUIDE.md
-│   ├── PROJECT_OVERVIEW.md
-├── main.py
-├── pyproject.toml
-├── src
-│   ├── models
-│   │   ├── date_change.py
-│   │   └── user.py
-│   └── utils
-│       ├── data_processor.py
-│       ├── date_calculator.py
-│       ├── date_converter.py
-│       ├── date_formatter.py
-│       ├── date_parser.py
-│       └── date_utils.py
-└── tests
-    └── unit
-        └── test_date_utils.py
-```
-- **src/**: Contains the source code including models and utility functions.
-- **tests/**: Contains unit tests for the project.
-- **docs/**: Documentation files for guidance and project overview.
+├── config/                  # Configuration files
+│   ├── config.yaml          # Main configuration file
+├── docs/                    # Documentation files
+│   ├── PROJECT_DOCUMENTATION.md  # Documentation guide
+│   ├── PROJECT_GUIDE.md     # User guide
+│   ├── PROJECT_OVERVIEW.md  # Project overview
+├── src/                     # Source code
+│   ├── models/              # Data models
+│   ├── utils/               # Utility functions and classes
+│   ├── main.py              # Main entry point
+├── tests/                   # Test cases
+│   ├── unit/                # Unit tests
+├── .gitignore               # Git ignore file
+├── README.md                # Project documentation
+```  
 
-## Contribution
-Contributions to this project are welcome! Please follow these steps:
+## Contribution Guidelines
+Contributions are welcome! Please follow these steps to contribute:
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
-3. Commit your changes.
-4. Push to your branch and submit a pull request.
+3. Make your changes and commit them.
+4. Push your branch and open a pull request.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-Thank you for your interest in contributing to this project! If you have any questions, feel free to reach out.
+---
