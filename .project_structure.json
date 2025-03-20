@@ -4,7 +4,11 @@
     "name": "test-for-commit",
     "description": "A Python-based application designed to manage and modify commit dates in version control systems, providing utilities for date processing, formatting, and manipulation.",
     "repository_url": "git@github.com-unwindflz:unwindflz/test-for-commit.git",
-    "technology_stack": ["Python", "YAML", "Git"],
+    "technology_stack": [
+      "Python",
+      "YAML",
+      "Git"
+    ],
     "project_type": "Utility Application",
     "development_status": "active"
   },
@@ -13,13 +17,19 @@
       "feature_name": "Commit Date Modification",
       "description": "Allows users to modify commit dates in their Git repositories based on specified configurations.",
       "implementation_status": "in_progress",
-      "related_files": ["change_dates.py", "commit_date_config_examples.yaml"]
+      "related_files": [
+        "change_dates.py",
+        "commit_date_config_examples.yaml"
+      ]
     },
     {
       "feature_name": "Date Formatting Utilities",
       "description": "Provides various utilities for formatting and manipulating dates, including conversion and validation functions.",
       "implementation_status": "completed",
-      "related_files": ["src/utils/date_formatter.py", "src/utils/date_utils.py"]
+      "related_files": [
+        "src/utils/date_formatter.py",
+        "src/utils/date_utils.py"
+      ]
     }
   ],
   "implementation_plan": {
@@ -27,19 +37,28 @@
       {
         "phase": "Phase 1",
         "description": "Initial development of commit date modification features and utility functions.",
-        "tasks": ["Implement core date modification logic", "Create utility functions for date formatting"],
+        "tasks": [
+          "Implement core date modification logic",
+          "Create utility functions for date formatting"
+        ],
         "estimated_files": 8
       },
       {
         "phase": "Phase 2",
         "description": "Testing and documentation for the developed features.",
-        "tasks": ["Write unit tests for core functionalities", "Update documentation based on new features"],
+        "tasks": [
+          "Write unit tests for core functionalities",
+          "Update documentation based on new features"
+        ],
         "estimated_files": 5
       },
       {
         "phase": "Phase 3",
         "description": "Enhance date formatting and validation features.",
-        "tasks": ["Implement additional date formatting options", "Add more validation rules for date inputs"],
+        "tasks": [
+          "Implement additional date formatting options",
+          "Add more validation rules for date inputs"
+        ],
         "estimated_files": 4
       }
     ],
@@ -74,7 +93,10 @@
     }
   },
   "development_guidelines": {
-    "coding_standards": ["PEP 8", "Docstring conventions"],
+    "coding_standards": [
+      "PEP 8",
+      "Docstring conventions"
+    ],
     "file_naming_conventions": "snake_case for Python files and classes",
     "commit_message_format": "conventional_commits",
     "testing_requirements": "All new features must have corresponding unit tests"
