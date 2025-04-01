@@ -1,0 +1,94 @@
+{
+  "version": "1.0",
+  "project_info": {
+    "name": "test-for-commit",
+    "description": "A project for modifying commit dates in Git repositories based on configuration settings.",
+    "repository_url": "git@github.com-unwindflz:unwindflz/test-for-commit.git",
+    "technology_stack": ["Python", "YAML"],
+    "project_type": "Utility Application",
+    "development_status": "active"
+  },
+  "core_features": [
+    {
+      "feature_name": "Commit Date Modification",
+      "description": "Allows users to modify commit dates in Git repositories based on specified configurations.",
+      "implementation_status": "completed",
+      "related_files": ["change_dates.py", "commit_date_config_examples.yaml"]
+    },
+    {
+      "feature_name": "Date Validation",
+      "description": "Provides validation for various date formats to ensure correctness before processing.",
+      "implementation_status": "completed",
+      "related_files": ["src/utils/date_validator.py"]
+    },
+    {
+      "feature_name": "Data Processing Utilities",
+      "description": "Utility functions for processing JSON data files used by the commit date modifier.",
+      "implementation_status": "in_progress",
+      "related_files": ["src/utils/data_processor.py"]
+    }
+  ],
+  "implementation_plan": {
+    "phases": [
+      {
+        "phase": "Phase 1",
+        "description": "Setup basic functionality and core features.",
+        "tasks": ["Implement commit date modification feature", "Create utility functions for data processing"],
+        "estimated_files": 5
+      },
+      {
+        "phase": "Phase 2",
+        "description": "Enhance validation and error handling.",
+        "tasks": ["Add more date formats to validation", "Improve error messages and logging"],
+        "estimated_files": 3
+      }
+    ],
+    "next_priorities": ["Complete data processing utilities", "Implement unit tests for existing features"]
+  },
+  "recommended_structure": {
+    "src/": {
+      "description": "Main source code directory",
+      "file_types": ["*.py"],
+      "subdirectories": {
+        "models/": "Data models and schemas",
+        "utils/": "Utility functions and helpers"
+      },
+      "priority": "high"
+    },
+    "docs/": {
+      "description": "Documentation files",
+      "file_types": ["*.md"],
+      "subdirectories": {},
+      "priority": "medium"
+    },
+    "tests/": {
+      "description": "Test files",
+      "file_types": ["test_*.py", "*_test.py"],
+      "subdirectories": {
+        "unit/": "Unit tests",
+        "integration/": "Integration tests"
+      },
+      "priority": "high"
+    }
+  },
+  "development_guidelines": {
+    "coding_standards": ["PEP 8", "Docstrings for all public methods"],
+    "file_naming_conventions": "Use snake_case for filenames and methods.",
+    "commit_message_format": "conventional_commits",
+    "testing_requirements": "All features should have unit tests and integration tests where applicable."
+  },
+  "suggested_next_files": [
+    {
+      "file_path": "src/utils/test_data_processor.py",
+      "purpose": "Unit tests for DataProcessor class.",
+      "priority": "high",
+      "dependencies": ["src/utils/data_processor.py"]
+    },
+    {
+      "file_path": "docs/PROJECT_GUIDE.md",
+      "purpose": "A guide for new contributors on how to set up and contribute to the project.",
+      "priority": "medium",
+      "dependencies": []
+    }
+  ]
+}
