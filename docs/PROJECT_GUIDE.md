@@ -1,44 +1,85 @@
-# Project Guide
+# Project Guide for Contributors
 
-## Overview
-This project is a Python application designed to manage and manipulate dates.
+Welcome to the **test-for-commit** project! This guide aims to help new contributors set up the project and understand how to contribute effectively.
 
-## Directory Structure
-The project follows a structured directory layout for better organization and maintainability:
+## Table of Contents
 
-```
-src/
-  ├── models/         # Contains data models and schemas
-  └── utils/          # Utility functions and helpers
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [Code of Conduct](#code-of-conduct)
+- [License](#license)
 
-docs/
-  └── PROJECT_GUIDE.md  # Documentation for the project
+## Introduction
 
-tests/
-  ├── unit/          # Unit tests for the application
+The **test-for-commit** project is a utility application designed to modify commit dates in Git repositories based on configuration settings. We welcome contributions from anyone interested in improving the project!
 
-config/
-  └── config.yaml     # Configuration files
-```
+## Getting Started
 
-## Guidelines
-- Place main application code in the `src/` directory.
-- Keep tests separate in the `tests/` directory.
-- Document everything in the `docs/` directory.
-- Use clear, descriptive directory names to enhance readability and navigation.
+To get started with the project, follow these steps:
 
-## Development Setup
-1. Clone the repository.
-2. Set up a virtual environment:
+1. **Clone the Repository**  
+   Use the following command to clone the repository:
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate
+   git clone git@github.com-unwindflz:unwindflz/test-for-commit.git
    ```
-3. Install dependencies using `pyproject.toml`.
 
-## Features
-- **Date Manipulation**: Utilities for changing and formatting dates.
-- **Data Processing**: Classes dedicated to processing data related to dates.
+2. **Set Up a Virtual Environment**  
+   It is recommended to use a virtual environment for Python projects. You can create one using:
+   ```bash
+   python -m venv .venv
+   ```
+   Activate the virtual environment:
+   - On Windows:
+     ```bash
+     .venv\Scripts\activate
+     ```
+   - On macOS and Linux:
+     ```bash
+     source .venv/bin/activate
+     ```
 
-## Contribution
-Contributions are welcome! Please submit a pull request or open an issue to discuss changes.
+3. **Install Dependencies**  
+   Install the required packages using pip:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Contributing
+
+We appreciate your contributions! Here’s how you can help:
+
+1. **Fork the Repository**  
+   Click the fork button to create a copy of the repository.
+
+2. **Create a Branch**  
+   Create a new branch for your feature or bug fix:
+   ```bash
+   git checkout -b my-feature-branch
+   ```
+
+3. **Make Changes**  
+   Implement your changes, ensuring you follow the coding standards outlined in our development guidelines:
+   - Follow PEP 8 for Python code.
+   - Use descriptive commit messages following the conventional commits format.
+
+4. **Run Tests**  
+   Before submitting your changes, run the tests to ensure everything works as expected:
+   ```bash
+   pytest
+   ```
+
+5. **Submit a Pull Request**  
+   Push your changes and create a pull request in the original repository.
+
+## Code of Conduct
+
+We expect all contributors to adhere to our [Code of Conduct](CODE_OF_CONDUCT.md). Please be respectful and considerate of others in the community.
+
+## License
+
+By contributing to this project, you agree that your contributions will be licensed under the same license as the project. See the [LICENSE](LICENSE) file for more information.
+
+Thank you for your interest in contributing to **test-for-commit**! We look forward to your contributions!  
+
+---
