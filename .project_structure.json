@@ -4,7 +4,10 @@
     "name": "test-for-commit",
     "description": "A project for modifying commit dates in Git repositories based on configuration settings.",
     "repository_url": "git@github.com-unwindflz:unwindflz/test-for-commit.git",
-    "technology_stack": ["Python", "YAML"],
+    "technology_stack": [
+      "Python",
+      "YAML"
+    ],
     "project_type": "Utility Application",
     "development_status": "active"
   },
@@ -13,19 +16,26 @@
       "feature_name": "Commit Date Modification",
       "description": "Allows users to modify commit dates in Git repositories based on specified configurations.",
       "implementation_status": "completed",
-      "related_files": ["change_dates.py", "commit_date_config_examples.yaml"]
+      "related_files": [
+        "change_dates.py",
+        "commit_date_config_examples.yaml"
+      ]
     },
     {
       "feature_name": "Date Validation",
       "description": "Provides validation for various date formats to ensure correctness before processing.",
       "implementation_status": "completed",
-      "related_files": ["src/utils/date_validator.py"]
+      "related_files": [
+        "src/utils/date_validator.py"
+      ]
     },
     {
       "feature_name": "Data Processing Utilities",
       "description": "Utility functions for processing JSON data files used by the commit date modifier.",
       "implementation_status": "in_progress",
-      "related_files": ["src/utils/data_processor.py"]
+      "related_files": [
+        "src/utils/data_processor.py"
+      ]
     }
   ],
   "implementation_plan": {
@@ -33,22 +43,127 @@
       {
         "phase": "Phase 1",
         "description": "Setup basic functionality and core features.",
-        "tasks": ["Implement commit date modification feature", "Create utility functions for data processing"],
+        "tasks": [
+          "Implement commit date modification feature",
+          "Create utility functions for data processing"
+        ],
         "estimated_files": 5
       },
       {
         "phase": "Phase 2",
         "description": "Enhance validation and error handling.",
-        "tasks": ["Add more date formats to validation", "Improve error messages and logging"],
+        "tasks": [
+          "Add more date formats to validation",
+          "Improve error messages and logging"
+        ],
+        "estimated_files": 3
+      },
+      {
+        "phase": "Phase 3",
+        "description": "Implement additional features and enhancements for DataProcessor.",
+        "tasks": [
+          "Extend DataProcessor functionalities",
+          "Update unit tests for new features"
+        ],
+        "estimated_files": 3
+      },
+      {
+        "phase": "Phase 4",
+        "description": "Enhance documentation for the project.",
+        "tasks": [
+          "Create detailed contributing guidelines",
+          "Document installation instructions",
+          "Establish a changelog"
+        ],
+        "estimated_files": 3,
+        "completed_files": 1
+      },
+      {
+        "phase": "Phase 3",
+        "description": "Implement additional features and enhancements for DataProcessor.",
+        "tasks": [
+          "Extend DataProcessor functionalities",
+          "Update unit tests for new features"
+        ],
+        "estimated_files": 3
+      },
+      {
+        "phase": "Phase 4",
+        "description": "Enhance documentation for the project.",
+        "tasks": [
+          "Create detailed contributing guidelines",
+          "Document installation instructions",
+          "Establish a changelog"
+        ],
+        "estimated_files": 3
+      },
+      {
+        "phase": "Phase 5",
+        "description": "Create additional documentation and guides.",
+        "tasks": [
+          "Develop usage instructions",
+          "Compile frequently asked questions"
+        ],
+        "estimated_files": 2
+      },
+      {
+        "phase": "Phase 5",
+        "description": "Create additional documentation and guides.",
+        "tasks": [
+          "Develop usage instructions",
+          "Compile frequently asked questions"
+        ],
+        "estimated_files": 2
+      },
+      {
+        "phase": "Phase 6",
+        "description": "Develop comprehensive usage documentation and FAQs.",
+        "tasks": [
+          "Create comprehensive usage guide",
+          "Compile frequently asked questions"
+        ],
+        "estimated_files": 2
+      },
+      {
+        "phase": "Phase 4",
+        "description": "Enhance documentation for the project.",
+        "tasks": [
+          "Create detailed contributing guidelines",
+          "Document installation instructions",
+          "Establish a changelog"
+        ],
+        "estimated_files": 3
+      },
+      {
+        "phase": "Phase 4",
+        "description": "Enhance documentation for the project.",
+        "tasks": [
+          "Document installation instructions",
+          "Establish a changelog"
+        ],
+        "estimated_files": 2
+      },
+      {
+        "phase": "Phase 3",
+        "description": "Implement additional features and enhancements for DataProcessor.",
+        "tasks": [
+          "Extend DataProcessor functionalities",
+          "Update unit tests for new features"
+        ],
         "estimated_files": 3
       }
     ],
-    "next_priorities": ["Complete data processing utilities", "Implement unit tests for existing features"]
+    "next_priorities": [
+      "Complete data processing utilities",
+      "Implement unit tests for existing features"
+    ]
   },
   "recommended_structure": {
     "src/": {
       "description": "Main source code directory",
-      "file_types": ["*.py"],
+      "file_types": [
+        "*.py"
+      ],
       "subdirectories": {
         "models/": "Data models and schemas",
         "utils/": "Utility functions and helpers"
@@ -57,13 +172,18 @@
     },
     "docs/": {
       "description": "Documentation files",
-      "file_types": ["*.md"],
+      "file_types": [
+        "*.md"
+      ],
       "subdirectories": {},
       "priority": "medium"
     },
     "tests/": {
       "description": "Test files",
-      "file_types": ["test_*.py", "*_test.py"],
+      "file_types": [
+        "test_*.py",
+        "*_test.py"
+      ],
       "subdirectories": {
         "unit/": "Unit tests",
         "integration/": "Integration tests"
@@ -72,22 +192,49 @@
     }
   },
   "development_guidelines": {
-    "coding_standards": ["PEP 8", "Docstrings for all public methods"],
+    "coding_standards": [
+      "PEP 8",
+      "Docstrings for all public methods"
+    ],
     "file_naming_conventions": "Use snake_case for filenames and methods.",
     "commit_message_format": "conventional_commits",
     "testing_requirements": "All features should have unit tests and integration tests where applicable."
   },
   "suggested_next_files": [
     {
-      "file_path": "src/utils/test_data_processor.py",
-      "purpose": "Unit tests for DataProcessor class.",
-      "priority": "high",
-      "dependencies": ["src/utils/data_processor.py"]
+      "file_path": "tests/unit/test_data_processor_v2_usage.py",
+      "purpose": "Unit tests for updated data processor usage.",
+      "priority": "medium",
+      "dependencies": []
     },
     {
-      "file_path": "docs/PROJECT_GUIDE.md",
-      "purpose": "A guide for new contributors on how to set up and contribute to the project.",
+      "file_path": "tests/unit/test_data_processor_edge_cases.py",
+      "purpose": "Unit tests for edge cases in data processor.",
       "priority": "medium",
+      "dependencies": []
+    },
+    {
+      "file_path": "tests/integration/test_data_processor_integration.py",
+      "purpose": "Integration tests for data processor usage.",
+      "priority": "medium",
+      "dependencies": []
+    },
+    {
+      "file_path": "tests/unit/test_data_processor_validation.py",
+      "purpose": "Unit tests for data processor validation logic.",
+      "priority": "medium",
+      "dependencies": []
+    },
+    {
+      "file_path": "docs/FAQ.md",
+      "purpose": "Frequently Asked Questions for the project.",
+      "priority": "low",
+      "dependencies": []
+    },
+    {
+      "file_path": "docs/UPGRADE_GUIDE.md",
+      "purpose": "Guide for upgrading the project dependencies and versions.",
+      "priority": "low",
       "dependencies": []
     }
   ]
