@@ -151,6 +151,15 @@
           "Update unit tests for new features"
         ],
         "estimated_files": 3
+      },
+      {
+        "phase": "Phase 4",
+        "description": "Enhance testing coverage for DataProcessor.",
+        "tasks": [
+          "Add more unit tests for various data formats",
+          "Implement integration tests for data processing"
+        ],
+        "estimated_files": 3
       }
     ],
     "next_priorities": [
@@ -201,12 +210,6 @@
     "testing_requirements": "All features should have unit tests and integration tests where applicable."
   },
   "suggested_next_files": [
-    {
-      "file_path": "tests/unit/test_data_processor_v2_usage.py",
-      "purpose": "Unit tests for updated data processor usage.",
-      "priority": "medium",
-      "dependencies": []
-    },
     {
       "file_path": "tests/unit/test_data_processor_edge_cases.py",
       "purpose": "Unit tests for edge cases in data processor.",
