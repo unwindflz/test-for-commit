@@ -160,6 +160,15 @@
           "Implement integration tests for data processing"
         ],
         "estimated_files": 3
+      },
+      {
+        "phase": "Phase 6",
+        "description": "Enhance testing coverage for DataProcessor.",
+        "tasks": [
+          "Add more unit tests for various data formats",
+          "Implement integration tests for data processing"
+        ],
+        "estimated_files": 3
       }
     ],
     "next_priorities": [
@@ -210,12 +219,6 @@
     "testing_requirements": "All features should have unit tests and integration tests where applicable."
   },
   "suggested_next_files": [
-    {
-      "file_path": "tests/unit/test_data_processor_edge_cases.py",
-      "purpose": "Unit tests for edge cases in data processor.",
-      "priority": "medium",
-      "dependencies": []
-    },
     {
       "file_path": "tests/integration/test_data_processor_integration.py",
       "purpose": "Integration tests for data processor usage.",
