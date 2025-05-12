@@ -220,12 +220,6 @@
   },
   "suggested_next_files": [
     {
-      "file_path": "tests/integration/test_data_processor_integration.py",
-      "purpose": "Integration tests for data processor usage.",
-      "priority": "medium",
-      "dependencies": []
-    },
-    {
       "file_path": "tests/unit/test_data_processor_validation.py",
       "purpose": "Unit tests for data processor validation logic.",
       "priority": "medium",
