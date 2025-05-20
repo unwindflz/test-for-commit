@@ -178,6 +178,15 @@
           "Implement integration tests for data processing"
         ],
         "estimated_files": 3
+      },
+      {
+        "phase": "Phase 5",
+        "description": "Enhance testing coverage for DataProcessor.",
+        "tasks": [
+          "Add more unit tests for various data formats",
+          "Implement integration tests for data processing"
+        ],
+        "estimated_files": 3
       }
     ],
     "next_priorities": [
@@ -229,6 +238,12 @@
   },
   "suggested_next_files": [
     {
+      "file_path": "tests/unit/test_data_processor_v3.py",
+      "purpose": "Unit tests for version 3 of data processor logic.",
+      "priority": "medium",
+      "dependencies": []
+    },
+    {
       "file_path": "docs/FAQ.md",
       "purpose": "Frequently Asked Questions for the project.",
       "priority": "low",
@@ -238,18 +253,6 @@
       "file_path": "docs/UPGRADE_GUIDE.md",
       "purpose": "Guide for upgrading the project dependencies and versions.",
       "priority": "low",
-      "dependencies": []
-    },
-    {
-      "file_path": "tests/unit/test_data_processor_integration.py",
-      "purpose": "Integration tests for data processor functionalities.",
-      "priority": "medium",
-      "dependencies": []
-    },
-    {
-      "file_path": "tests/unit/test_data_processor_v3.py",
-      "purpose": "Unit tests for version 3 of data processor logic.",
-      "priority": "medium",
       "dependencies": []
     }
   ]
