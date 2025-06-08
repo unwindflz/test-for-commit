@@ -247,14 +247,20 @@
   },
   "suggested_next_files": [
     {
-      "file_path": "tests/unit/test_data_processor_validation_v4.py",
-      "purpose": "Unit tests for validation logic in data processor v4.",
+      "file_path": "tests/unit/test_data_processor_integration_v4.py",
+      "purpose": "Integration tests for data processor version 4.",
       "priority": "medium",
       "dependencies": []
     },
     {
-      "file_path": "tests/unit/test_data_processor_integration_v4.py",
-      "purpose": "Integration tests for data processor version 4.",
+      "file_path": "tests/unit/test_data_processor_integration_v5.py",
+      "purpose": "Integration tests for version 5 of data processor logic.",
+      "priority": "medium",
+      "dependencies": []
+    },
+    {
+      "file_path": "tests/unit/test_data_processor_validation_v5.py",
+      "purpose": "Unit tests for validation logic in data processor v5.",
       "priority": "medium",
       "dependencies": []
     },
@@ -271,14 +277,14 @@
       "dependencies": []
     },
     {
-      "file_path": "tests/unit/test_data_processor_integration_v5.py",
-      "purpose": "Integration tests for version 5 of data processor logic.",
+      "file_path": "tests/unit/test_data_processor_edge_cases_v5.py",
+      "purpose": "Unit tests for edge cases in data processor v5 validation.",
       "priority": "medium",
       "dependencies": []
     },
     {
-      "file_path": "tests/unit/test_data_processor_validation_v5.py",
-      "purpose": "Unit tests for validation logic in data processor v5.",
+      "file_path": "tests/unit/test_data_processor_usage_v5.py",
+      "purpose": "Unit tests for usage scenarios in data processor v5.",
       "priority": "medium",
       "dependencies": []
     }
